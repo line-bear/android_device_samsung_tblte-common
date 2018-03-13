@@ -51,14 +51,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/bluetooth/iop_bt.db:/system/vendor/etc/bluetooth/iop_bt.db \
 	$(LOCAL_PATH)/configs/bluetooth/iop_device_list.conf:/system/vendor/etc/bluetooth/iop_device_list.conf
 
-# Camera
-PRODUCT_PACKAGES += \
-	android.hardware.camera.provider@2.4-impl \
-	camera.device@1.0-impl \
-	camera.apq8084 \
-	libxml2 \
-	Snap
-
 # Display & Graphics
 PRODUCT_PACKAGES += \
 	libhdmi \
