@@ -20,9 +20,6 @@ COMMON_PATH := device/samsung/tblte-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
-# ADB Legacy Interface
-TARGET_USES_LEGACY_ADB_INTERFACE := true
-
 # Audio
 AUDIO_FEATURE_ENABLED_HWDEP_CAL := true
 USE_CUSTOM_AUDIO_POLICY := 1
