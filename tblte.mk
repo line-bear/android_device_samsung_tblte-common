@@ -43,14 +43,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/audio/mixer_paths_i2s.xml:system/vendor/etc/mixer_paths_i2s.xml \
 	$(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:system/vendor/etc/sound_trigger_mixer_paths.xml
 
-# Bluetooth	
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/bluetooth/auto_pair_devlist.conf:/system/vendor/etc/bluetooth/auto_pair_devlist.conf \
-	$(LOCAL_PATH)/configs/bluetooth/bt_did.conf:/system/vendor/etc/bluetooth/bt_did.conf \
-	$(LOCAL_PATH)/configs/bluetooth/bt_stack.conf:/system/vendor/etc/bluetooth/bt_stack.conf \
-	$(LOCAL_PATH)/configs/bluetooth/iop_bt.db:/system/vendor/etc/bluetooth/iop_bt.db \
-	$(LOCAL_PATH)/configs/bluetooth/iop_device_list.conf:/system/vendor/etc/bluetooth/iop_device_list.conf
-
 # Display & Graphics
 PRODUCT_PACKAGES += \
 	libhdmi \
