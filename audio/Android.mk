@@ -11,8 +11,9 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)
 LOCAL_MODULE_RELATIVE_PATH := etc
 LOCAL_PROPRIETARY_MODULE      := true
 include $(BUILD_PREBUILT)
+endif
 
-else ifeq($(TARGET_DEVICE),tbltechn)
+ifeq ($(TARGET_DEVICE),tbltechn)
 include $(CLEAR_VARS)
 LOCAL_MODULE       := mixer_paths.xml
 LOCAL_MODULE_TAGS  := optional
