@@ -32,7 +32,7 @@ PRODUCT_AAPT_PREBUILT_DPI := 560dpi xxhdpi xhdpi hdpi
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1601
+TARGET_SCREEN_WIDTH := 1600
 
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 
@@ -135,13 +135,12 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprintd \
-    fingerprint.apq8084
+    fingerprint.apq8084 \
+	ValidityService
 
 PRODUCT_PROPERTY_OVERRIDES += \
 fingerprint_enabled=1
 
-# Gello
-PRODUCT_PACKAGES += Gello
 # GPS
 PRODUCT_PACKAGES += \
     gps.apq8084
@@ -165,6 +164,7 @@ PRODUCT_PACKAGES += \
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
+	$(LOCAL_PATH)/keylayout/sec_touchscreen.kl:system/usr/keylayout/sec_touchscreen.kl \
     $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_e-pen.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl \

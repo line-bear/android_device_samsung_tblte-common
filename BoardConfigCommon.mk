@@ -89,7 +89,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/apq8084
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
-#Keymaster
+# Keymaster
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Legacy BLOB Support
